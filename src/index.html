@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NR Caçambas - Atendimento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+<div class="container">
+  <div class="header">
+    <div class="header-foto">🪣</div>
+    <div class="header-info">
+      <h3>NR Caçambas</h3>
+      <p id="statusHeader" class="online">Online agora</p>
+    </div>
+    <div class="header-icons">
+      <span title="Vídeo">📹</span>
+      <span title="Ligação">📞</span>
+      <button class="btn-reset" onclick="resetarConversa()" title="Resetar conversa">⋮</button>
+    </div>
+  </div>
+
+  <div class="mensagens" id="mensagens"></div>
+
+  <div class="rodape">
+    <span class="rodape-emoji">😊</span>
+    <input type="text" id="inputMsg" placeholder="Digite uma mensagem..." />
+    <button onclick="enviarMensagem()">
+      <!-- ícone de enviar SVG, mais fiel ao whatsapp -->
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+        <path d="M1.101 21.757 23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script src="env.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
